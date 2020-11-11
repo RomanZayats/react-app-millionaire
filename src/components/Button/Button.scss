@@ -1,0 +1,27 @@
+@import '../../theme/styles/variables';
+
+.btn {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: $inter-font;
+  background-color: #FF8B37;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mobile-btn {
+  width: 288px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 8px;
+}
+
+.desktop-btn {
+  width: 296px;
+  height: 64px;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 12px;
+}

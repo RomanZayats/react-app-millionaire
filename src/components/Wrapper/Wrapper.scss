@@ -1,0 +1,17 @@
+@import '../../theme/styles/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  //flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, #FFFFFF 50%, #FFF3EB 50%)
+}
+
+@media screen and (min-width: $m-size) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
