@@ -20,21 +20,28 @@
   "watch": {
     "stylelint-dev": {
       "patterns": [
-        "./src/**/*.scss"
+        "/src/**/*.scss"
       ],
       "extensions": "scss"
+    },
+    "eslint": {
+      "patterns": [
+        "/src/**/*.js"
+      ],
+      "extensions": "js"
     }
   },
   "scripts": {
     "start": "npm-run-all -p watch-sass-js start-js",
     "start-js": "react-scripts start",
-    "build": "npm run stylelint-build && react-scripts build",
+    "build": "npm run eslint && npm run stylelint-build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "stylelint-dev": "stylelint ./src/**/*.scss --cache --cache-location ./.stylelintcache; exit 0",
     "stylelint-build": "stylelint ./src/**/*.scss",
     "watch-sass-js": "npm-watch",
-    "stylelint-fix-sass": "stylelint --fix ./src/**/*.scss"
+    "stylelint-fix-sass": "stylelint --fix ./src/**/*.scss",
+    "eslint": "eslint ./src/**/*.js"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +60,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.5",
+    "standard": "^16.0.1"
   }
 }
