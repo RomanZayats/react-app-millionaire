@@ -3,16 +3,24 @@
 .btn {
   width: 288px;
   height: 48px;
-  color: #FFFFFF;
+  color: $white-100;
   font-weight: 600;
   font-size: 14px;
   font-family: $inter-font;
   line-height: 16px;
-  background-color: #FF8B37;
+  background-color: $orange-100;
   border: none;
   border-radius: 8px;
   outline: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: $orange-80;
+}
+
+.btn:active {
+  background-color: $orange-120;
 }
 
 @media screen and (min-width: $md-size) {
