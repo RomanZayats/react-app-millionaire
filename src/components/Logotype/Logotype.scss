@@ -12,17 +12,43 @@
   width: 288px;
 }
 
-@media screen and (min-width: $m-size) {
+
+@media screen and (min-width: $sm-size) {
+  .logotype-img {
+    position: absolute;
+    right: calc((100% - 426px)/2);
+    bottom: 0;
+    width: 426px;
+  }
+}
+
+@media screen and (min-width: $md-size) {
   .logotype-container {
     width: 50vw;
-    height: 50vh;
+    height: 100vh;
   }
 
   .logotype-img {
     position: absolute;
-    right: calc((100% - 624px)/2);
-    bottom: calc((100% - 367px)/2);
-    width: 624px;
-    height: 367px;
+    right: 0;
+    bottom: calc((100% - 335px)/2);
+    width: 570px;
+    height: 335px;
+  }
+}
+
+@media screen and (min-width: $lg-size) {
+  .logotype-img {
+    bottom: calc((100% - 390px)/2);
+    width: 664px;
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: $xl-size) {
+  .logotype-img {
+    bottom: calc((100% - 500px)/2);
+    width: 852px;
+    height: 500px;
   }
 }

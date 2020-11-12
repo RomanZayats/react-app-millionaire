@@ -6,7 +6,7 @@ const AppTitle = () => {
   return (
     <div className='app-title-container'>
       <h1 className='app-title-text'>Who wants to be a millionaire?</h1>
-      <Button text="Start" className="mobile-btn" />
+      <Button text="Start" />
     </div>
   )
 }

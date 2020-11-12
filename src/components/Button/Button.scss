@@ -1,27 +1,26 @@
 @import '../../theme/styles/variables';
 
 .btn {
+  width: 288px;
+  height: 48px;
   color: #FFFFFF;
   font-weight: 600;
+  font-size: 14px;
   font-family: $inter-font;
+  line-height: 16px;
   background-color: #FF8B37;
   border: none;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
 }
 
-.mobile-btn {
-  width: 288px;
-  height: 48px;
-  font-size: 14px;
-  line-height: 16px;
-  border-radius: 8px;
-}
-
-.desktop-btn {
-  width: 296px;
-  height: 64px;
-  font-size: 20px;
-  line-height: 23px;
-  border-radius: 12px;
+@media screen and (min-width: $md-size) {
+  .btn {
+    width: 296px;
+    height: 64px;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 12px;
+  }
 }

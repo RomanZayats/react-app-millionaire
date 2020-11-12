@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   //flex-wrap: wrap;
-  align-content: center;
+  //align-content: center;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right bottom, #FFFFFF 50%, #FFF3EB 50%)
 }
 
-@media screen and (min-width: $m-size) {
+@media screen and (min-width: $md-size) {
   .wrapper {
     flex-direction: row;
   }
