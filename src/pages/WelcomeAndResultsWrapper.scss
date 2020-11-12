@@ -1,17 +1,15 @@
-@import '../../theme/styles/variables';
+@import '../theme/styles/variables';
 
-.wrapper {
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  //flex-wrap: wrap;
-  //align-content: center;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right bottom, #FFFFFF 50%, #FFF3EB 50%)
 }
 
 @media screen and (min-width: $md-size) {
-  .wrapper {
+  .page-wrapper {
     flex-direction: row;
   }
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import './Logotype.scss'
+import React from 'react';
+import './Logotype.scss';
 
 const Logotype = () => {
   return (
@@ -9,4 +9,4 @@ const Logotype = () => {
   )
 }
 
-export default Logotype
+export default Logotype;
