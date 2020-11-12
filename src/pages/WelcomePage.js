@@ -1,7 +1,7 @@
 import React from 'react';
 import Logotype from '../components/Logotype/Logotype';
 import Greetings from '../components/Greetings/Greetings';
-import './WelcomeAndResultsWrapper.scss';
+import './WelcomeAndResults.scss';
 
 const WelcomePage = () => {
   return (

@@ -1,0 +1,13 @@
+.burger-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  height: 14px;
+  background-image: url('../../theme/svg/gameMenu/BurgerBtn.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

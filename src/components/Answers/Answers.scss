@@ -1,0 +1,29 @@
+.answers-container {
+  height: 50vh;
+}
+
+.option-1, .option-2, .option-3, .option-4 {
+  width: 320px;
+  height: 56px;
+  margin-bottom: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.option-1 {
+  background-image: url('../../theme/svg/InactiveA.svg');
+}
+.option-2 {
+  background-image: url('../../theme/svg/InactiveB.svg');
+}
+.option-3 {
+  background-image: url('../../theme/svg/InactiveC.svg');
+}
+.option-4 {
+  background-image: url('../../theme/svg/InactiveD.svg');
+}
+
+.option-1 p, .option-2 p, .option-3 p, .option-4 p {
+  margin-left: 65px;
+  line-height: 56px;
+}
