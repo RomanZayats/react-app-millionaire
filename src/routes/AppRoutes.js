@@ -8,7 +8,7 @@ import Page404 from '../components/Page404/Page404';
 const AppRoutes = () => {
   return (
     <Switch>
-      <Redirect exact from="/" to="/welcome" component={WelcomePage} />
+      <Redirect exact from="/" to="/welcome" />
       <Route exact path='/welcome' component={WelcomePage} />
       <Route exact path='/game' component={GamePage} />
       <Route exact path='/results' component={ResultsPage} />

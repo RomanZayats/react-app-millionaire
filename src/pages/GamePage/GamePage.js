@@ -16,7 +16,7 @@ const GamePage = () => {
       {winWidth < 960 && <MenuBurgerBtn onClick={() => setShowMenu(true)}/>}
       <Question questionText={'Question from server'}/>
       <AnswerOptions answerOptions={['Option-A', 'Option-B', 'Option-C', 'Option-D']}/>
-      {showMenu && <MenuBox setShowMenu={setShowMenu}/>}
+      {winWidth < 960 && showMenu && <MenuBox setShowMenu={setShowMenu}/>}
       {winWidth >= 960 && <MenuBox setShowMenu={setShowMenu}/>}
     </div>
   )

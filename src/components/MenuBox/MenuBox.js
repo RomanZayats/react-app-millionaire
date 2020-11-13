@@ -2,6 +2,7 @@ import React from 'react';
 import './MenuBox.scss';
 import MenuCloseBtn from '../MenuCloseBtn/MenuCloseBtn';
 import useWinSize from '../../utils/hooks/useWinSize'
+import MenuStep from '../MenuStep/MenuStep'
 
 const MenuBox = (props) => {
   const { setShowMenu } = props;
@@ -10,7 +11,18 @@ const MenuBox = (props) => {
   return (
     <div className='menu-container'>
       {winWidth < 960 && <MenuCloseBtn onClick={() => setShowMenu(false)}/>}
-      <p>game path</p>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
+      <MenuStep/>
     </div>
   )
 }
