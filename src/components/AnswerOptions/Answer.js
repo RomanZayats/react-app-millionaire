@@ -1,25 +1,49 @@
 import React from 'react'
+import useWinSize from '../../utils/hooks/useWinSize'
+import '../../theme/styles/_variables.scss'
 
-import imgInactiveA from '../../theme/icons/mobile/options/InactiveA.svg'
-import imgInactiveB from '../../theme/icons/mobile/options/InactiveB.svg'
-import imgInactiveC from '../../theme/icons/mobile/options/InactiveC.svg'
-import imgInactiveD from '../../theme/icons/mobile/options/InactiveD.svg'
+import mobileInactiveA from '../../theme/icons/mobile/options/InactiveA.svg'
+import mobileInactiveB from '../../theme/icons/mobile/options/InactiveB.svg'
+import mobileInactiveC from '../../theme/icons/mobile/options/InactiveC.svg'
+import mobileInactiveD from '../../theme/icons/mobile/options/InactiveD.svg'
+
+import desktopInactiveA from '../../theme/icons/desktop/options/InactiveA.svg'
+import desktopInactiveB from '../../theme/icons/desktop/options/InactiveB.svg'
+import desktopInactiveC from '../../theme/icons/desktop/options/InactiveC.svg'
+import desktopInactiveD from '../../theme/icons/desktop/options/InactiveD.svg'
 
 const Answer = (props) => {
-  const {optionName} = props;
+  const {optionName, optionText} = props;
+
+  const {width: winWidth} = useWinSize();
 
   function optionHandler (letter) {
-    switch (letter) {
-      case 'A':
-        return imgInactiveA
-      case 'B':
-        return imgInactiveB
-      case 'C':
-        return imgInactiveC
-      case 'D':
-        return imgInactiveD
-      default:
-        return 'ERR'
+    if (winWidth > 960) {
+      switch (letter) {
+        case 'A':
+          return desktopInactiveA
+        case 'B':
+          return desktopInactiveB
+        case 'C':
+          return desktopInactiveC
+        case 'D':
+          return desktopInactiveD
+        default:
+          return 'ERR'
+      }
+    } else {
+      switch (letter) {
+        case 'A':
+          return mobileInactiveA
+        case 'B':
+          return mobileInactiveB
+        case 'C':
+          return mobileInactiveC
+        case 'D':
+          return mobileInactiveD
+        default:
+          return 'ERR'
+      }
     }
   }
 
@@ -28,7 +52,7 @@ const Answer = (props) => {
       <div className='option-box'
            style={{backgroundImage: `url(${optionHandler(optionName)})`}}
       >
-        <p>{`Option ${optionName}`}</p>
+        <p>{`${optionText}`}</p>
       </div>
     </a>
   )

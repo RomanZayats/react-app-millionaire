@@ -1,10 +1,12 @@
 import React from 'react';
 import './Question.scss';
 
-const Question = () => {
+const Question = (props) => {
+  const {questionText} = props;
+
   return (
     <div className='question-container'>
-      <p>Question text</p>
+      <p>{questionText}</p>
     </div>
   )
 }

@@ -1,3 +1,5 @@
+@import "../../theme/styles/variables";
+
 .question-container {
   display: flex;
   align-items: center;
@@ -9,4 +11,27 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media screen and (min-width: $sm-size) {
+}
+
+@media screen and (min-width: $md-size) {
+  .question-container {
+    justify-content: start;
+    width: 75vw;
+  }
+
+  .question-container p {
+    margin-left: calc((75vw - (320px * 2))/2);
+  }
+}
+
+@media screen and (min-width: $lg-size) {
+  .question-container p {
+    margin-left: calc((75vw - (421px * 2))/2);
+  }
+}
+
+@media screen and (min-width: $xl-size) {
 }
