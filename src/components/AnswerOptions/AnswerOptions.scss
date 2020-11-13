@@ -1,0 +1,25 @@
+@import '../../theme/styles/variables';
+
+.answers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  //height: 25vh;
+}
+
+.option-box {
+  width: 320px;
+  height: 56px;
+  margin-bottom: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.option-box p {
+  display: inline-block;
+  margin-left: 65px;
+  color: $black-100;
+  line-height: 56px;
+  text-decoration: none;
+}

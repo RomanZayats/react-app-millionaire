@@ -1,7 +1,7 @@
 import React from 'react';
-import './CloseBtn.scss';
+import './MenuCloseBtn.scss';
 
-const CloseBtn = (props) => {
+const MenuCloseBtn = (props) => {
   const {onClick} = props;
 
   return (
@@ -11,4 +11,4 @@ const CloseBtn = (props) => {
   )
 }
 
-export default CloseBtn;
+export default MenuCloseBtn;

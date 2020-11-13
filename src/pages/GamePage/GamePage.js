@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
 import './GamePage.scss';
 import Question from '../../components/Question/Question';
-import Answers from '../../components/Answers/Answers';
-import BurgerBtn from '../../components/BurgerBtn/BurgerBtn';
-import Menu from '../../components/Menu/Menu';
+// import AnswerOptions from '../../components/AnswerOptions/AnswerOptions';
+import MenuBurgerBtn from '../../components/MenuBurgerBtn/MenuBurgerBtn';
+import MenuBox from '../../components/MenuBox/MenuBox';
+// import --AnswerTemplate from '../../components/--AnswerTemplate/--AnswerTemplate'
+import AnswerOptions from '../../components/AnswerOptions/AnswerOptions'
 
 const GamePage = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className='game-container'>
-      <BurgerBtn onClick={() => setShowMenu(true)}/>
+      <MenuBurgerBtn onClick={() => setShowMenu(true)}/>
       <Question/>
-      <Answers/>
-      {showMenu && <Menu setShowMenu={setShowMenu}/>}
+      <AnswerOptions/>
+      {showMenu && <MenuBox setShowMenu={setShowMenu}/>}
     </div>
   )
 }
 
 export default GamePage;
+
+// <--AnswerTemplate screenSize='mobile' optionLetter='A'/>

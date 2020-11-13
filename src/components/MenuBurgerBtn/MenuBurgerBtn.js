@@ -1,7 +1,7 @@
 import React from 'react';
-import './BurgerBtn.scss';
+import './MenuBurgerBtn.scss';
 
-const BurgerBtn = (props) => {
+const MenuBurgerBtn = (props) => {
   const {onClick} = props;
 
   return (
@@ -11,4 +11,4 @@ const BurgerBtn = (props) => {
   )
 }
 
-export default BurgerBtn;
+export default MenuBurgerBtn;
