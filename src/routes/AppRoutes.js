@@ -1,9 +1,9 @@
-import React, { memo } from 'react'
+import React, { memo } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import WelcomePage from '../pages/WelcomePage';
+import WelcomePage from '../pages/GreetingsPages/WelcomePage';
 import GamePage from '../pages/GamePage/GamePage';
-import ResultsPage from '../pages/ResultsPage';
-import Page404 from '../components/Page404/Page404';
+import ResultsPage from '../pages/GreetingsPages/ResultsPage';
+import Page404 from '../pages/Page404/Page404';
 
 const AppRoutes = () => {
   return (

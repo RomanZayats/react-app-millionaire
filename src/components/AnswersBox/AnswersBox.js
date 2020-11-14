@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { memo } from 'react'
 import './AnswerOptions.scss';
-import Answer from './Answer';
+import Answer from './AnswerItem';
 
-const AnswerOptions = (props) => {
-  const { questionObjArr, step, setStep } = props;
+const AnswersBox = (props) => {
+  const { questionObjArr, step, setStep, setResult, winSumArr } = props;
   const { questionAnswers } = questionObjArr[`${step}`];
-  const [clicked, setClicked] = useState(false);
 
   const questionAnswersKeys = Object.keys(questionAnswers);
   const questionAnswersValues = Object.values(questionAnswers);
@@ -15,16 +14,14 @@ const AnswerOptions = (props) => {
       <div className='answers-sub-container'>
         <Answer step={step}
                 setStep={setStep}
-                clicked={clicked}
-                setClicked={setClicked}
+                winSumArr={winSumArr}
                 optionLetter='A'
                 optionText={questionAnswersKeys[0]}
                 optionValue={questionAnswersValues[0]}/>
 
         <Answer step={step}
                 setStep={setStep}
-                clicked={clicked}
-                setClicked={setClicked}
+                winSumArr={winSumArr}
                 optionLetter='B'
                 optionText={questionAnswersKeys[1]}
                 optionValue={questionAnswersValues[1]}/>
@@ -32,16 +29,14 @@ const AnswerOptions = (props) => {
       <div className='answers-sub-container'>
         <Answer step={step}
                 setStep={setStep}
-                clicked={clicked}
-                setClicked={setClicked}
+                winSumArr={winSumArr}
                 optionLetter='C'
                 optionText={questionAnswersKeys[2]}
                 optionValue={questionAnswersValues[2]}/>
 
         <Answer step={step}
                 setStep={setStep}
-                clicked={clicked}
-                setClicked={setClicked}
+                winSumArr={winSumArr}
                 optionLetter='D'
                 optionText={questionAnswersKeys[3]}
                 optionValue={questionAnswersValues[3]}/>
@@ -50,4 +45,4 @@ const AnswerOptions = (props) => {
   )
 }
 
-export default AnswerOptions;
+export default memo(AnswersBox);

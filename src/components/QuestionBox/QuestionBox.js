@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import './QuestionBox.scss'
-import Question from '../Question/Question'
+import React, { memo } from 'react'
+import './QuestionBox.scss';
+import QuestionItem from './QuestionItem';
 
 const QuestionBox = (props) => {
   const {questionObjArr, step, setStep} = props;
@@ -16,9 +16,9 @@ const QuestionBox = (props) => {
 
   return (
     <div className='question-container'>
-      <Question questionText={questionText}/>
+      <QuestionItem questionText={questionText}/>
     </div>
   )
 }
 
-export default QuestionBox
+export default memo(QuestionBox);

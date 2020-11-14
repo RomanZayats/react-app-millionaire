@@ -1,8 +1,8 @@
 import React, { memo, useMemo } from 'react'
 import './MenuBox.scss';
-import MenuCloseBtn from '../MenuCloseBtn/MenuCloseBtn';
+import MenuCloseBtn from './MenuCloseBtn/MenuCloseBtn';
 import useWinSize from '../../utils/hooks/useWinSize';
-import MenuStep from '../MenuStep/MenuStep';
+import MenuStep from './MenuStep/MenuStep';
 import {v4 as uuidv4} from 'uuid';
 
 const MenuBox = (props) => {

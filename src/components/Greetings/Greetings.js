@@ -14,7 +14,6 @@ const Greetings = (props) => {
       </div>
       <Link to={'/game'}><Button className='btn'
                                  text={buttonText}
-                                 onClick={() => {}}
       />
       </Link>
     </div>

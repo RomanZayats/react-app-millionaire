@@ -1,6 +1,6 @@
-import React, { memo } from 'react'
-import Logotype from '../components/Logotype/Logotype';
-import Greetings from '../components/Greetings/Greetings';
+import React, { memo } from 'react';
+import Logotype from '../../components/Logotype/Logotype';
+import Greetings from '../../components/Greetings/Greetings';
 import './WelcomeAndResults.scss';
 
 const WelcomePage = () => {

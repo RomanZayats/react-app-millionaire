@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Question = (props) => {
+const QuestionItem = (props) => {
   const { questionText } = props;
   return (
     <p>
@@ -9,4 +9,4 @@ const Question = (props) => {
   )
 }
 
-export default Question
+export default QuestionItem
