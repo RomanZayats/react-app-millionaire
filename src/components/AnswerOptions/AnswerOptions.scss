@@ -9,12 +9,17 @@
   height: 50vh;
 }
 
+.answers-sub-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .option-box {
   width: 320px;
   height: 56px;
   margin-bottom: 4px;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .option-box p {
@@ -27,7 +32,7 @@
 
 
 @media screen and (min-width: $sm-size) {
-  .answers-container {
+  .answers-sub-container {
     flex-direction: row;
   }
 

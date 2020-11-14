@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom';
 import WelcomePage from '../pages/WelcomePage';
 import GamePage from '../pages/GamePage/GamePage';
@@ -17,4 +17,4 @@ const AppRoutes = () => {
   )
 }
 
-export default AppRoutes;
+export default memo(AppRoutes);

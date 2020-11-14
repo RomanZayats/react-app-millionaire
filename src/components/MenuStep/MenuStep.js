@@ -9,7 +9,8 @@ import mobileStepInactive from '../../theme/icons/mobile/steps/Inactive.svg'
 import desktopStepInactive from '../../theme/icons/desktop/steps/Inactive.svg'
 import useWinSize from '../../utils/hooks/useWinSize'
 
-const MenuStep = () => {
+const MenuStep = (props) => {
+  const {winSum} = props;
   const { width: winWidth } = useWinSize()
 
   function stepHandler (width) {
@@ -24,7 +25,7 @@ const MenuStep = () => {
     <div className='step-box'
          style={{ backgroundImage: `url(${stepHandler(winWidth)})` }}
     >
-      <p>'Hello'</p>
+      <p>{winSum}</p>
     </div>
   )
 }

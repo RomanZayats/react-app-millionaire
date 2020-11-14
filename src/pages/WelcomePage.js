@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react'
 import Logotype from '../components/Logotype/Logotype';
 import Greetings from '../components/Greetings/Greetings';
 import './WelcomeAndResults.scss';
@@ -14,4 +14,4 @@ const WelcomePage = () => {
   )
 }
 
-export default WelcomePage;
+export default memo(WelcomePage);

@@ -1,5 +1,5 @@
 import './App.scss'
-import React from 'react'
+import React, { memo } from 'react'
 import AppRoutes from './routes/AppRoutes'
 
 function App () {
@@ -10,4 +10,4 @@ function App () {
   )
 }
 
-export default App
+export default memo(App)

@@ -1,13 +1,11 @@
-import React from 'react';
-import './Question.scss';
+import React from 'react'
 
 const Question = (props) => {
-  const {questionText} = props;
-
+  const { qText } = props;
   return (
-    <div className='question-container'>
-      <p>{questionText}</p>
-    </div>
+    <p>
+      {qText}
+    </p>
   )
 }
 
