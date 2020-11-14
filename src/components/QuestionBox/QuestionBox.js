@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './QuestionBox.scss'
 import Question from '../Question/Question'
 
 const QuestionBox = (props) => {
-  const q1 = props.questionObjArr[0]
-  const q1Text = q1.questionText
+  const {questionObjArr, step, setStep} = props;
+
+  const questionObj = questionObjArr[`${step}`];
+  const questionText = questionObj.questionText;
+
+  // const questionTextArr = questionObjArr.map(q => q.questionText)
+  // const questionAnswersArr = questionObjArr.map(q => q.questionAnswers)
+  //
+  // console.log(questionTextArr)
+  // console.log(questionAnswersArr)
 
   return (
     <div className='question-container'>
-      <Question qText={q1Text}/>
+      <Question questionText={questionText}/>
     </div>
   )
 }

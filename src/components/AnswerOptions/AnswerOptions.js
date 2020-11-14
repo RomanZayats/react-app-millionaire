@@ -1,26 +1,53 @@
-import React from 'react'
-import './AnswerOptions.scss'
-import Answer from './Answer'
+import React, { useState } from 'react';
+import './AnswerOptions.scss';
+import Answer from './Answer';
 
 const AnswerOptions = (props) => {
-  const {questionObjArr, answerOptions} = props;
-  const {questionAnswers} = questionObjArr[0];
+  const { questionObjArr, step, setStep } = props;
+  const { questionAnswers } = questionObjArr[`${step}`];
+  const [clicked, setClicked] = useState(false);
 
-  const questionAnswersKeys = Object.keys(questionAnswers)
-  const questionAnswersValues = Object.values(questionAnswers)
+  const questionAnswersKeys = Object.keys(questionAnswers);
+  const questionAnswersValues = Object.values(questionAnswers);
 
   return (
     <div className='answers-container'>
       <div className='answers-sub-container'>
-        <Answer optionName='A' optionText={questionAnswersKeys[0]} optionValue={questionAnswersValues[0]}/>
-        <Answer optionName='B' optionText={questionAnswersKeys[1]} optionValue={questionAnswersValues[1]}/>
+        <Answer step={step}
+                setStep={setStep}
+                clicked={clicked}
+                setClicked={setClicked}
+                optionLetter='A'
+                optionText={questionAnswersKeys[0]}
+                optionValue={questionAnswersValues[0]}/>
+
+        <Answer step={step}
+                setStep={setStep}
+                clicked={clicked}
+                setClicked={setClicked}
+                optionLetter='B'
+                optionText={questionAnswersKeys[1]}
+                optionValue={questionAnswersValues[1]}/>
       </div>
       <div className='answers-sub-container'>
-        <Answer optionName='C' optionText={questionAnswersKeys[2]} optionValue={questionAnswersValues[2]}/>
-        <Answer optionName='D' optionText={questionAnswersKeys[3]} optionValue={questionAnswersValues[3]}/>
+        <Answer step={step}
+                setStep={setStep}
+                clicked={clicked}
+                setClicked={setClicked}
+                optionLetter='C'
+                optionText={questionAnswersKeys[2]}
+                optionValue={questionAnswersValues[2]}/>
+
+        <Answer step={step}
+                setStep={setStep}
+                clicked={clicked}
+                setClicked={setClicked}
+                optionLetter='D'
+                optionText={questionAnswersKeys[3]}
+                optionValue={questionAnswersValues[3]}/>
       </div>
     </div>
   )
 }
 
-export default AnswerOptions
+export default AnswerOptions;

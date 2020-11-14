@@ -15,10 +15,13 @@
   flex-wrap: wrap;
 }
 
+.option-link {
+  margin-bottom: 4px;
+}
+
 .option-box {
   width: 320px;
   height: 56px;
-  margin-bottom: 4px;
   background-repeat: no-repeat;
 }
 
@@ -36,7 +39,7 @@
     flex-direction: row;
   }
 
-  .option-box {
+  .option-link {
     margin-bottom: 30px;
   }
 }
@@ -49,7 +52,7 @@
 
 @media screen and (min-width: $lg-size) {
   .option-box {
-    width: 421px;
+    width: 405px;
     height: 72px;
   }
 

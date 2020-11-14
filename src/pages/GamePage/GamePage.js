@@ -5,7 +5,7 @@ import MenuBox from '../../components/MenuBox/MenuBox'
 import QuestionBox from '../../components/QuestionBox/QuestionBox'
 import AnswerOptions from '../../components/AnswerOptions/AnswerOptions'
 import useWinSize from '../../utils/hooks/useWinSize'
-import * as axios from 'axios'
+import axios from 'axios'
 import Loader from '../../components/Loader/Loader'
 
 const GamePage = () => {
@@ -13,7 +13,7 @@ const GamePage = () => {
   const [showMenu, setShowMenu] = useState(false)
   const [gameDataBase, setGameDataBase] = useState([])
   const [isLoading, setIsLoading] = useState(true)
-  const [step, setStep] = useState(0)
+  const [step, setStep] = useState(0);
 
   useEffect(() => {
     axios('dataBaseOne.json')
@@ -33,8 +33,8 @@ const GamePage = () => {
   return (
     <div className='game-container'>
       {winWidth < 960 && <MenuBurgerBtn onClick={() => setShowMenu(true)}/>}
-      {<QuestionBox questionObjArr={questionObjArr}/>}
-      <AnswerOptions questionObjArr={questionObjArr} answerOptions={['Option-A', 'Option-B', 'Option-C', 'Option-D']}/>
+      {<QuestionBox step={step} setStep={setStep} questionObjArr={questionObjArr}/>}
+      <AnswerOptions step={step} setStep={setStep} questionObjArr={questionObjArr}/>
       {winWidth < 960 && showMenu && <MenuBox winSumArr={winSumArr} setShowMenu={setShowMenu}/>}
       {winWidth >= 960 && <MenuBox winSumArr={winSumArr} setShowMenu={setShowMenu}/>}
     </div>

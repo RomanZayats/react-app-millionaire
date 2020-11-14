@@ -3,11 +3,11 @@
     "question": {
       "questionText": "Count 1+1?",
       "questionAnswers": {
-          "1": "incorrect",
-          "2": "correct",
-          "3": "incorrect",
-          "4": "incorrect"
-        }
+        "1": "incorrect",
+        "2": "correct",
+        "3": "incorrect",
+        "4": "incorrect"
+      }
     },
     "winSum": "$500"
   },
@@ -15,18 +15,10 @@
     "question": {
       "questionText": "Count 2+2?",
       "questionAnswers": {
-        "answer-1": {
-          "1": "incorrect"
-        },
-        "answer-2": {
-          "2": "incorrect"
-        },
-        "answer-3": {
-          "3": "incorrect"
-        },
-        "answer-4": {
-          "4": "correct"
-        }
+        "5": "incorrect",
+        "1": "incorrect",
+        "8": "incorrect",
+        "4": "correct"
       }
     },
     "winSum": "$1,000"
@@ -35,18 +27,10 @@
     "question": {
       "questionText": "Count 3+3?",
       "questionAnswers": {
-        "answer-1": {
-          "15": "incorrect"
-        },
-        "answer-2": {
-          "7": "incorrect"
-        },
-        "answer-3": {
-          "6": "correct"
-        },
-        "answer-4": {
-          "42": "incorrect"
-        }
+        "15": "incorrect",
+        "7": "incorrect",
+        "6": "correct",
+        "9": "incorrect"
       }
     },
     "winSum": "$2,000"
@@ -55,18 +39,10 @@
     "question": {
       "questionText": "Count 4+4?",
       "questionAnswers": {
-        "answer-1": {
-          "8": "correct"
-        },
-        "answer-2": {
-          "7": "incorrect"
-        },
-        "answer-3": {
-          "21": "incorrect"
-        },
-        "answer-4": {
-          "42": "incorrect"
-        }
+        "8": "correct",
+        "7": "incorrect",
+        "21": "incorrect",
+        "42": "incorrect"
       }
     },
     "winSum": "$4,000"
@@ -75,18 +51,10 @@
     "question": {
       "questionText": "Count 5+5?",
       "questionAnswers": {
-        "answer-1": {
-          "8": "incorrect"
-        },
-        "answer-2": {
-          "10": "correct"
-        },
-        "answer-3": {
-          "24": "incorrect"
-        },
-        "answer-4": {
-          "13": "incorrect"
-        }
+        "8": "incorrect",
+        "10": "correct",
+        "24": "incorrect",
+        "13": "incorrect"
       }
     },
     "winSum": "$8,000"
@@ -95,18 +63,10 @@
     "question": {
       "questionText": "Count 6+6?",
       "questionAnswers": {
-        "answer-1": {
-          "6": "incorrect"
-        },
-        "answer-2": {
-          "10": "incorrect"
-        },
-        "answer-3": {
-          "12": "correct"
-        },
-        "answer-4": {
-          "15": "incorrect"
-        }
+        "6": "incorrect",
+        "10": "incorrect",
+        "12": "correct",
+        "15": "incorrect"
       }
     },
     "winSum": "$16,000"
@@ -115,18 +75,10 @@
     "question": {
       "questionText": "Count 7+7?",
       "questionAnswers": {
-        "answer-1": {
-          "42": "incorrect"
-        },
-        "answer-2": {
-          "15": "incorrect"
-        },
-        "answer-3": {
-          "34": "incorrect"
-        },
-        "answer-4": {
-          "14": "correct"
-        }
+        "42": "incorrect",
+        "15": "incorrect",
+        "34": "incorrect",
+        "14": "correct"
       }
     },
     "winSum": "$32,000"
@@ -135,18 +87,10 @@
     "question": {
       "questionText": "Count 8+8?",
       "questionAnswers": {
-        "answer-1": {
-          "16": "correct"
-        },
-        "answer-2": {
-          "12": "incorrect"
-        },
-        "answer-3": {
-          "21": "incorrect"
-        },
-        "answer-4": {
-          "54": "incorrect"
-        }
+        "16": "correct",
+        "12": "incorrect",
+        "21": "incorrect",
+        "54": "incorrect"
       }
     },
     "winSum": "$64,000"
@@ -155,18 +99,10 @@
     "question": {
       "questionText": "Count 9+9?",
       "questionAnswers": {
-        "answer-1": {
-          "16": "incorrect"
-        },
-        "answer-2": {
-          "18": "correct"
-        },
-        "answer-3": {
-          "21": "incorrect"
-        },
-        "answer-4": {
-          "23": "incorrect"
-        }
+        "16": "incorrect",
+        "18": "correct",
+        "21": "incorrect",
+        "23": "incorrect"
       }
     },
     "winSum": "$125,000"
@@ -175,18 +111,10 @@
     "question": {
       "questionText": "Count 10+10?",
       "questionAnswers": {
-        "answer-1": {
-          "30": "incorrect"
-        },
-        "answer-2": {
-          "23": "incorrect"
-        },
-        "answer-3": {
-          "20": "correct"
-        },
-        "answer-4": {
-          "21": "incorrect"
-        }
+        "30": "incorrect",
+        "23": "incorrect",
+        "20": "correct",
+        "21": "incorrect"
       }
     },
     "winSum": "$250,000"
@@ -195,18 +123,10 @@
     "question": {
       "questionText": "Count 11+11?",
       "questionAnswers": {
-        "answer-1": {
-          "12": "incorrect"
-        },
-        "answer-2": {
-          "23": "incorrect"
-        },
-        "answer-3": {
-          "20": "incorrect"
-        },
-        "answer-4": {
-          "22": "correct"
-        }
+        "12": "incorrect",
+        "23": "incorrect",
+        "20": "incorrect",
+        "22": "correct"
       }
     },
     "winSum": "$500,000"
@@ -215,18 +135,10 @@
     "question": {
       "questionText": "Count 12+12?",
       "questionAnswers": {
-        "answer-1": {
-          "24": "correct"
-        },
-        "answer-2": {
-          "22": "incorrect"
-        },
-        "answer-3": {
-          "54": "incorrect"
-        },
-        "answer-4": {
-          "29": "incorrect"
-        }
+        "24": "correct",
+        "22": "incorrect",
+        "54": "incorrect",
+        "29": "incorrect"
       }
     },
     "winSum": "$1,000,000"
