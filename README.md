@@ -1,4 +1,4 @@
-##### This is the template of "Who wants to be a millianaire" application.
+##### This is the template of "Who wants to be a millionaire" application.
 
 To start the app, just clone the repository and run in the command line:
 
