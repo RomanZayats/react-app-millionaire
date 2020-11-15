@@ -20,12 +20,12 @@ const GamePage = () => {
     axios('dataBase.json')
       .then(res => {
         setGameDataBase(res.data)
-        setTimeout(() => {
-          setIsLoading(false)
-          localStorage.removeItem('result')
-        }, 600)
       })
-  }, [])
+    setTimeout(() => {
+      setIsLoading(false)
+      localStorage.removeItem('result')
+    }, 600)
+  }, [setGameDataBase])
 
   const winSumArr = useMemo(() => gameDataBase.map(q => q.winSum), [gameDataBase])
   const questionObjArr = useMemo(() => gameDataBase.map(q => q.question), [gameDataBase])
