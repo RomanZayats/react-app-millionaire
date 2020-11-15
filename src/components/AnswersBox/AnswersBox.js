@@ -1,13 +1,13 @@
 import React, { memo } from 'react'
-import './AnswerOptions.scss';
-import Answer from './AnswerItem';
+import './AnswerOptions.scss'
+import Answer from './AnswerItem'
 
 const AnswersBox = (props) => {
-  const { questionObjArr, step, setStep, setResult, winSumArr } = props;
-  const { questionAnswers } = questionObjArr[`${step}`];
+  const { questionObjArr, step, setStep, winSumArr } = props
+  const { questionAnswers } = questionObjArr[`${step}`]
 
-  const questionAnswersKeys = Object.keys(questionAnswers);
-  const questionAnswersValues = Object.values(questionAnswers);
+  const questionAnswersKeys = Object.keys(questionAnswers)
+  const questionAnswersValues = Object.values(questionAnswers)
 
   return (
     <div className='answers-container'>
@@ -45,4 +45,4 @@ const AnswersBox = (props) => {
   )
 }
 
-export default memo(AnswersBox);
+export default memo(AnswersBox)

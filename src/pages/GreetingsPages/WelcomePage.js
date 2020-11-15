@@ -1,7 +1,7 @@
-import React, { memo } from 'react';
-import Logotype from '../../components/Logotype/Logotype';
-import Greetings from '../../components/Greetings/Greetings';
-import './WelcomeAndResults.scss';
+import React, { memo } from 'react'
+import Logotype from '../../components/Logotype/Logotype'
+import Greetings from '../../components/Greetings/Greetings'
+import './WelcomeAndResults.scss'
 
 const WelcomePage = () => {
   return (
@@ -14,4 +14,4 @@ const WelcomePage = () => {
   )
 }
 
-export default memo(WelcomePage);
+export default memo(WelcomePage)

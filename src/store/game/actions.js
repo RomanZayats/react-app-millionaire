@@ -1,4 +1,4 @@
-import types from './types';
+import types from './types'
 
 const saveQuestions = (questions) => ({
   type: types.SAVE_QUESTIONS,

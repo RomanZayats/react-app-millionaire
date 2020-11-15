@@ -10,7 +10,7 @@ import desktopStepInactive from '../../../theme/icons/desktop/steps/Inactive.svg
 import useWinSize from '../../../utils/hooks/useWinSize'
 
 const MenuStep = (props) => {
-  const {winSum} = props;
+  const { winSum } = props
   const { width: winWidth } = useWinSize()
 
   function stepHandler (width) {

@@ -1,8 +1,8 @@
-import React from 'react';
-import './MenuCloseBtn.scss';
+import React from 'react'
+import './MenuCloseBtn.scss'
 
 const MenuCloseBtn = (props) => {
-  const {onClick} = props;
+  const { onClick } = props
 
   return (
     <button className='close-btn'
@@ -11,4 +11,4 @@ const MenuCloseBtn = (props) => {
   )
 }
 
-export default MenuCloseBtn;
+export default MenuCloseBtn

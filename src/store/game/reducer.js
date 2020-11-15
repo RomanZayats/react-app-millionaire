@@ -1,11 +1,8 @@
-import types from './types';
+import types from './types'
 
 const initialState = {
   questions: [],
   isLoading: true,
-  // options: [],
-  // prize: '',
-  // error: null
 }
 
 const game = (action, state = initialState) => {
@@ -21,4 +18,4 @@ const game = (action, state = initialState) => {
   }
 }
 
-export default game;
+export default game

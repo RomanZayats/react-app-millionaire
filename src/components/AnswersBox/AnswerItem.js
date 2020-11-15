@@ -1,48 +1,50 @@
 import React, { memo, useState } from 'react'
 import useWinSize from '../../utils/hooks/useWinSize'
 import '../../theme/styles/_variables.scss'
-import bgImgSubHandler from './utils'
+import bgImgSubHandler from './utils/utils'
 
 const AnswerItem = (props) => {
-  const { optionLetter, optionText, optionValue, step, setStep, clicked, setClicked, setResult, winSumArr } = props
+  const { optionLetter, optionText, optionValue, step, setStep, winSumArr } = props
   const { width: winWidth } = useWinSize()
-  const defaultBgImg = `url(${bgImgSubHandler(winWidth, null, optionLetter, null)})`
+
+  const defaultBgImg = () => `url(${bgImgSubHandler(winWidth, null, optionLetter, null)})`
+  const [bgImg, setBgImg] = useState(defaultBgImg())
 
   const stepCounter = (gameStep) => {
     localStorage.setItem('result', JSON.stringify(winSumArr[`${gameStep}`]))
     setStep(gameStep + 1)
+    setBgImg(defaultBgImg())
   }
 
-  // const refreshBgImg = () => `url(${bgImgSubHandler(winWidth, null, optionLetter, null)})`;
-
   const bgImgHandler = (windowParams, event, letter, value) => {
-    if (event.target.tagName === 'DIV') {
-      event.target.style.background = bgImgSubHandler(windowParams, event.type, letter, value)
+    setBgImg(bgImgSubHandler(windowParams, event.type, letter, value))
+    if (value === 'incorrect') {
+      setStep(12)
     }
   }
 
   const optionClickHandler = (windowParams, event, letter, value) => {
     setTimeout(() => {
       bgImgHandler(windowParams, event, letter, null)
-    }, 100)
+    }, 300)
     setTimeout(() => {
       bgImgHandler(windowParams, event, letter, value)
-    }, 200)
+    }, 1500)
     setTimeout(() => {
       // setClicked(true)
       stepCounter(step)
-    }, 300)
+    }, 2500)
   }
 
   return (
     <a href='#'
        className='option-link'
        onClick={(e) => optionClickHandler(winWidth, e, optionLetter, optionValue)}
-      // onMouseOver={(e) => bgImgHandler(winWidth, e, optionLetter, null)}
-      // onMouseLeave={(e) => bgImgHandler(winWidth, e, optionLetter, null)}
+       onMouseOver={(e) => bgImgHandler(winWidth, e, optionLetter, null)}
+       onMouseLeave={(e) => bgImgHandler(winWidth, e, optionLetter, null)}
     >
       <div className='option-box'
-           style={{ background: defaultBgImg }}
+           style={{ background: bgImg }}
       >
         <p>{`${optionText}`}</p>
       </div>

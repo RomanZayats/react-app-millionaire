@@ -14,16 +14,16 @@ const UseWinSize = () => {
         width: window.innerWidth,
         height: window.innerHeight
       })
-    };
+    }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
-  return winSize;
+  return winSize
 }
 
-export default UseWinSize;
+export default UseWinSize
