@@ -3,7 +3,7 @@ import './GamePage.scss'
 import MenuBurgerBtn from '../../components/MenuBox/MenuBurgerBtn/MenuBurgerBtn'
 import MenuBox from '../../components/MenuBox/MenuBox'
 import QuestionBox from '../../components/QuestionBox/QuestionBox'
-import AnswerOptions from '../../components/AnswersBox/AnswersBox'
+import AnswerBox from '../../components/AnswersBox/AnswersBox'
 import useWinSize from '../../utils/hooks/useWinSize'
 import axios from 'axios'
 import Loader from '../../components/Loader/Loader'
@@ -46,10 +46,10 @@ const GamePage = () => {
                     setStep={setStep}
                     questionObjArr={questionObjArr}/>}
 
-      <AnswerOptions step={step}
-                     setStep={setStep}
-                     winSumArr={winSumArr}
-                     questionObjArr={questionObjArr}/>
+      <AnswerBox step={step}
+                 setStep={setStep}
+                 winSumArr={winSumArr}
+                 questionObjArr={questionObjArr}/>
 
       {winWidth < 960 && showMenu && <MenuBox winSumArr={winSumArr}
                                               setShowMenu={setShowMenu}
