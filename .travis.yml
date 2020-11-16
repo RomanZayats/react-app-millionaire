@@ -1,14 +1,13 @@
 language: node_js
-
 node_js:
-  - 12.18.4
-
+- 12.18.4
 cache:
   directories:
-    - './node_modules'
-
+  - "./node_modules"
 before_script:
-  - npm install --prefix './'
-
+- npm install --prefix './'
 script:
-  - npm run test --prefix './'
+- npm run test --prefix './'
+env:
+  global:
+    secure: p0175TIHWM9rFOBiy2d+m/KX213DuHos57JXy58naMKY4a+AEh+JZE35BsGWwBJ8szKRb8xf8itF8MXhEWZiUK2MVGa1+mCR3nsGbfpFGSXTmSybGRyYEg40lRfzJyvu64FsfmN8pFiwRDV4tpzDVzd9WpMWgrW3Dto9lBQSDm4mkgvOcQnJ2IjnkqbErYrAptYvLlMvBngnYJ9wsgL+X2fmkK2vSsuF4ontD6nMAB4al5dCLgxfdZPUMkhJn/7JoL4j5qQMYuznp7Q1SHjGYhzf9rSZ7ikxKgSK2BPHLeUE/eYdnkshdImR5bDdQgMmbSK0LmA2lz1myjp1u4C76oSnM9sX4VY1hBL8dsIl+cNAtyjAvJgOpORPnApRlvG+vlV9xeWVtfnbPJgsFs3ea78dpVbOdvu4UbzQpTsutiXU5++WUKitLO7pz94h4di9e9atK+UM+PN2/DoNO+4Exs4yKTP1imfE/K9dbWKdi7NlzHWBEo1202twXXlxTdKFRJjbWzTVB+Ag5c6LvhIRnmn5AbCiGsaq8qRIIwx9Rmzi66Isx4/usF3+0sq0ZD+mTX05FuQCgUcDNfU5+0P5OsWZJ+/oSBLnfFP5e8hx3iDSmhnXvhMGqU8YAj5YWlh5FIGuSRje0igZFivFnVHybvRndqYQwvlaIxwPxhmuVbI=
