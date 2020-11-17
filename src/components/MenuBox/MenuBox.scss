@@ -1,4 +1,4 @@
-@import '../../theme/styles/variables';
+@import "../../theme/styles/variables";
 
 .menu-container {
   position: absolute;
@@ -28,7 +28,6 @@
 }
 
 @media screen and (min-width: $sm-size) {
-
 }
 
 @media screen and (min-width: $md-size) {
@@ -38,7 +37,6 @@
     overflow: hidden;
     background-color: $white-100;
   }
-
 }
 
 @media screen and (min-width: $lg-size) {
@@ -46,7 +44,6 @@
     width: 376px;
     height: 40px;
   }
-
 }
 
 @media screen and (min-width: $xl-size) {

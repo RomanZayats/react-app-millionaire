@@ -23,13 +23,13 @@
   }
 
   .question-container p {
-    margin-left: calc((75vw - (320px * 2))/2);
+    margin-left: calc((75vw - (320px * 2)) / 2);
   }
 }
 
 @media screen and (min-width: $lg-size) {
   .question-container p {
-    margin-left: calc((75vw - (405px * 2))/2);
+    margin-left: calc((75vw - (405px * 2)) / 2);
   }
 }
 

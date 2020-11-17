@@ -1,4 +1,4 @@
-@import '../../theme/styles/variables';
+@import "../../theme/styles/variables";
 
 .answers-container {
   display: flex;
@@ -32,7 +32,6 @@
   line-height: 56px;
   text-decoration: none;
 }
-
 
 @media screen and (min-width: $sm-size) {
   .answers-sub-container {

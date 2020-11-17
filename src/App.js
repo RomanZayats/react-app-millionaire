@@ -1,12 +1,12 @@
-import React, { memo } from 'react'
-import AppRoutes from './routes/AppRoutes'
+import React, { memo } from "react";
+import AppRoutes from "./routes/AppRoutes";
 
-function App () {
+function App() {
   return (
     <div className="App">
-      <AppRoutes/>
+      <AppRoutes />
     </div>
-  )
+  );
 }
 
-export default memo(App)
+export default memo(App);

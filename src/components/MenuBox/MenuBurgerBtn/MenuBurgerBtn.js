@@ -1,14 +1,10 @@
-import React from 'react'
-import './MenuBurgerBtn.scss'
+import React from "react";
+import "./MenuBurgerBtn.scss";
 
 const MenuBurgerBtn = (props) => {
-  const { onClick } = props
+  const { onClick } = props;
 
-  return (
-    <button className='burger-btn'
-            onClick={onClick}
-    />
-  )
-}
+  return <button className="burger-btn" onClick={onClick} />;
+};
 
-export default MenuBurgerBtn
+export default MenuBurgerBtn;

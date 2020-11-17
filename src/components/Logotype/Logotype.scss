@@ -1,4 +1,4 @@
-@import '../../theme/styles/variables';
+@import "../../theme/styles/variables";
 
 .logotype-container {
   position: relative;
@@ -7,16 +7,15 @@
 
 .logotype-img {
   position: absolute;
-  right: calc((100% - 288px)/2);
+  right: calc((100% - 288px) / 2);
   bottom: 0;
   width: $logo-size-xs;
 }
 
-
 @media screen and (min-width: $sm-size) {
   .logotype-img {
     position: absolute;
-    right: calc((100% - 426px)/2);
+    right: calc((100% - 426px) / 2);
     bottom: 0;
     width: $logo-size-sm;
   }
@@ -31,27 +30,27 @@
   .logotype-img {
     position: absolute;
     right: 0;
-    bottom: calc((100% - 335px)/2);
+    bottom: calc((100% - 335px) / 2);
     width: $logo-size-md;
-    --height: calc(var($logo-size-md) * .6);
+    --height: calc(var($logo-size-md) * 0.6);
     height: var(--height);
   }
 }
 
 @media screen and (min-width: $lg-size) {
   .logotype-img {
-    bottom: calc((100% - 390px)/2);
+    bottom: calc((100% - 390px) / 2);
     width: $logo-size-lg;
-    --height: calc(var($logo-size-lg) * .6);
+    --height: calc(var($logo-size-lg) * 0.6);
     height: var(--height);
   }
 }
 
 @media screen and (min-width: $xl-size) {
   .logotype-img {
-    bottom: calc((100% - 500px)/2);
+    bottom: calc((100% - 500px) / 2);
     width: $logo-size-xl;
-    --height: calc(var($logo-size-xl) * .6);
+    --height: calc(var($logo-size-xl) * 0.6);
     height: var(--height);
   }
 }

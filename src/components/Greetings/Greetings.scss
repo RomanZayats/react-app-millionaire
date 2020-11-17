@@ -1,4 +1,4 @@
-@import '../../theme/styles/variables';
+@import "../../theme/styles/variables";
 
 .greetings-container {
   display: flex;
@@ -21,7 +21,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: $sm-size) {
