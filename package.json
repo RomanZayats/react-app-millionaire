@@ -39,7 +39,6 @@
     "start-js": "react-scripts start",
     "build": "npm run eslint && npm run stylelint-build && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "stylelint-dev": "stylelint ./src/**/*.scss --cache --cache-location ./.stylelintcache; exit 0",
     "stylelint-build": "stylelint ./src/**/*.scss",
     "stylelint-fix-sass": "stylelint --fix ./src/**/*.scss",
@@ -47,10 +46,7 @@
     "prettier-fix-all": "prettier -w ./src/",
     "stylelint-prettier-check": "stylelint-config-prettier-check",
     "eslint": "eslint ./src/**/*.js",
-    "eslint-fix-js": "eslint --fix ./src/**/*.js",
-    "postinstall": "husky install",
-    "prepublish": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "eslint-fix-js": "eslint --fix ./src/**/*.js"
   },
   "eslintConfig": {
     "extends": [
@@ -73,6 +69,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": ""
     }
   },
   "devDependencies": {
