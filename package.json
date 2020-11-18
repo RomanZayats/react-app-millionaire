@@ -20,6 +20,22 @@
     "redux-thunk": "^2.3.0",
     "web-vitals": "^0.2.4"
   },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "pinst": "^2.1.1",
+    "prettier": "2.1.2",
+    "prop-types": "^15.7.2",
+    "standard": "^16.0.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.1.0",
+    "uuid": "^8.3.1"
+  },
   "watch": {
     "stylelint-dev": {
       "patterns": [
@@ -34,19 +50,10 @@
       "extensions": "js"
     }
   },
-  "scripts": {
-    "start": "npm-run-all -p watch-sass-js start-js",
-    "start-js": "react-scripts start",
-    "build": "npm run eslint && npm run stylelint-build && react-scripts build",
-    "test": "react-scripts test",
-    "stylelint-dev": "stylelint ./src/**/*.scss --cache --cache-location ./.stylelintcache; exit 0",
-    "stylelint-build": "stylelint ./src/**/*.scss",
-    "stylelint-fix-sass": "stylelint --fix ./src/**/*.scss",
-    "watch-sass-js": "npm-watch",
-    "prettier-fix-all": "prettier -w ./src/",
-    "stylelint-prettier-check": "stylelint-config-prettier-check",
-    "eslint": "eslint ./src/**/*.js",
-    "eslint-fix-js": "eslint --fix ./src/**/*.js"
+  "husky": {
+    "hooks": {
+      "pre-commit": "CI=true react-scripts test"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -67,25 +74,18 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": ""
-    }
-  },
-  "devDependencies": {
-    "eslint": "^7.13.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-react": "^7.21.5",
-    "husky": "^4.3.0",
-    "pinst": "^2.1.1",
-    "prettier": "2.1.2",
-    "prop-types": "^15.7.2",
-    "standard": "^16.0.1",
-    "stylelint": "^13.7.2",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-order": "^4.1.0",
-    "uuid": "^8.3.1"
+  "scripts": {
+    "start": "npm-run-all -p watch-sass-js start-js",
+    "start-js": "react-scripts start",
+    "build": "npm run eslint && npm run stylelint-build && react-scripts build",
+    "test": "react-scripts test",
+    "stylelint-dev": "stylelint ./src/**/*.scss --cache --cache-location ./.stylelintcache; exit 0",
+    "stylelint-build": "stylelint ./src/**/*.scss",
+    "stylelint-fix-sass": "stylelint --fix ./src/**/*.scss",
+    "watch-sass-js": "npm-watch",
+    "prettier-fix-all": "prettier -w ./src/",
+    "stylelint-prettier-check": "stylelint-config-prettier-check",
+    "eslint": "eslint ./src/**/*.js",
+    "eslint-fix-js": "eslint --fix ./src/**/*.js"
   }
 }

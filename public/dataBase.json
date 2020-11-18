@@ -1,23 +1,23 @@
 [
   {
     "question": {
-      "questionText": "Count 1+1?",
+      "questionText": "Count 1+1 = ...",
       "questionAnswers": {
-        "5": "incorrect",
-        "1": "incorrect",
         "2": "correct",
-        "4": "incorrect"
+        "1": "incorrect",
+        "-1": "incorrect",
+        "0": "incorrect"
       }
     },
     "winSum": "$500"
   },
   {
     "question": {
-      "questionText": "Count 2+2?",
+      "questionText": "Count 2+2 = ...",
       "questionAnswers": {
-        "5": "incorrect",
+        "2": "incorrect",
         "1": "incorrect",
-        "8": "incorrect",
+        "3": "incorrect",
         "4": "correct"
       }
     },
@@ -25,7 +25,7 @@
   },
   {
     "question": {
-      "questionText": "Count 3+3?",
+      "questionText": "Count 3+3 = ...",
       "questionAnswers": {
         "15": "incorrect",
         "7": "incorrect",
@@ -37,7 +37,7 @@
   },
   {
     "question": {
-      "questionText": "Count 4+4?",
+      "questionText": "Count 4+4 = ...",
       "questionAnswers": {
         "8": "correct",
         "7": "incorrect",
@@ -49,7 +49,7 @@
   },
   {
     "question": {
-      "questionText": "Count 5+5?",
+      "questionText": "Count 5+5 = ...",
       "questionAnswers": {
         "8": "incorrect",
         "10": "correct",
@@ -61,7 +61,7 @@
   },
   {
     "question": {
-      "questionText": "Count 6+6?",
+      "questionText": "Count 6+6 = ...",
       "questionAnswers": {
         "6": "incorrect",
         "10": "incorrect",
@@ -73,7 +73,7 @@
   },
   {
     "question": {
-      "questionText": "Count 7+7?",
+      "questionText": "Count 7+7 = ...",
       "questionAnswers": {
         "42": "incorrect",
         "15": "incorrect",
@@ -85,7 +85,7 @@
   },
   {
     "question": {
-      "questionText": "Count 8+8?",
+      "questionText": "Count 8+8 = ...",
       "questionAnswers": {
         "16": "correct",
         "12": "incorrect",
@@ -97,7 +97,7 @@
   },
   {
     "question": {
-      "questionText": "Count 9+9?",
+      "questionText": "Count 9+9 = ...",
       "questionAnswers": {
         "16": "incorrect",
         "18": "correct",
@@ -109,7 +109,7 @@
   },
   {
     "question": {
-      "questionText": "Count 10+10?",
+      "questionText": "Count 10+10 = ...",
       "questionAnswers": {
         "30": "incorrect",
         "23": "incorrect",
@@ -121,7 +121,7 @@
   },
   {
     "question": {
-      "questionText": "Count 11+11?",
+      "questionText": "Count 11+11 = ...",
       "questionAnswers": {
         "12": "incorrect",
         "23": "incorrect",
@@ -133,7 +133,7 @@
   },
   {
     "question": {
-      "questionText": "Count 12+12?",
+      "questionText": "Count 12+12 = ...",
       "questionAnswers": {
         "24": "correct",
         "22": "incorrect",
