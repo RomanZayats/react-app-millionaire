@@ -47,6 +47,7 @@ const AnswerItem = (props) => {
   };
 
   return (
+    // eslint-disable-next-line
     <a
       href="#"
       className="option-link"
